@@ -1,0 +1,119 @@
+a{
+    text-decoration: none;
+}
+
+.features-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-card-reverse{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0 120px;
+    background-color: #fafafa;
+}
+
+.features-card-normal{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.features-desc-container{
+    padding: 64px 0 64px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.features-desc-container-reverse{
+    padding: 64px 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.features-header{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.features-points{
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+.features-desc-bottom{
+    display: flex;
+    gap: 8px;
+}
+
+.know-more-btn{
+    background-color: rgb(13, 176, 49, 0.1);
+    color: #0DB031;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.know_more-arrow{
+    background-color: rgb(13, 176, 49, 0.1);
+    color: #0DB031;
+    border: none;
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.feature-logo{
+    margin-bottom: 48px;
+}
+
+.features-img-container{
+    display: flex;
+    margin-top: 64px;
+}
+
+.features-navigation-container-end{
+    display: flex;
+    justify-content: flex-end;
+    padding: 32px 120px;
+    background: #fafafa;
+    border-top: 1px solid rgb(0, 0, 0, 0.05);
+}
+
+.features-navigation-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 120px;
+    background: #fafafa;
+    border-top: 1px solid rgb(0, 0, 0, 0.05);
+}
+
+.features-navigation-container-start{
+    display: flex;
+    justify-content: flex-start;
+    padding: 32px 120px;
+    background: #fafafa;
+    border-top: 1px solid rgb(0, 0, 0, 0.05);
+}
+
+.features-navigation-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #0DB031;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
