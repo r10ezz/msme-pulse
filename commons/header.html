@@ -14,121 +14,67 @@
               >Features <img src="/assets/arrow_down_ios.svg" alt="Dropdown"
             /></a>
             <ul class="dropdown-menu">
-              <li class="feature-item">
+              <li class="feature-item" data-link="/pages/task-management.html">
                 <div class="feature-icon">
-                  <img
-                    src="/assets/feature-dropdown-task.png"
-                    alt="Feature Icon"
-                  />
+                  <img src="/assets/feature-dropdown-task.png" alt="Feature Icon" />
                 </div>
                 <div class="feature-text">
                   <span class="feature-title">Task management</span>
                   <span class="feature-desc">Track and manage tasks</span>
                 </div>
-                <img
-                  class="feature-arrow"
-                  src="/assets/arrow_forward_ios.svg"
-                  alt="Forward Arrow"
-                />
+                <img class="feature-arrow" src="/assets/arrow_forward_ios.svg" alt="Forward Arrow" />
               </li>
-              <li class="feature-item">
+              <li class="feature-item" data-link="/pages/employee-management.html">
                 <div class="feature-icon">
-                  <img
-                    src="/assets/feature-dropdown-employee.png"
-                    alt="Feature Icon"
-                  />
+                  <img src="/assets/feature-dropdown-employee.png" alt="Feature Icon" />
                 </div>
                 <div class="feature-text">
                   <span class="feature-title">Employee management</span>
-                  <span class="feature-desc"
-                    >Manage your Employees working with you</span
-                  >
+                  <span class="feature-desc">Manage your Employees working with you</span>
                 </div>
-                <img
-                  class="feature-arrow"
-                  src="/assets/arrow_forward_ios.svg"
-                  alt="Forward Arrow"
-                />
+                <img class="feature-arrow" src="/assets/arrow_forward_ios.svg" alt="Forward Arrow" />
               </li>
-              <li class="feature-item">
+              <li class="feature-item" data-link="/pages/customer-relationship-management.html">
                 <div class="feature-icon">
-                  <img
-                    src="/assets/feature-dropdown-customer.png"
-                    alt="Feature Icon"
-                  />
+                  <img src="/assets/feature-dropdown-customer.png" alt="Feature Icon" />
                 </div>
                 <div class="feature-text">
-                  <span class="feature-title"
-                    >Customer Relationship Management</span
-                  >
-                  <span class="feature-desc"
-                    >Handle and track your customer</span
-                  >
+                  <span class="feature-title">Customer Relationship Management</span>
+                  <span class="feature-desc">Handle and track your customer</span>
                 </div>
-                <img
-                  class="feature-arrow"
-                  src="/assets/arrow_forward_ios.svg"
-                  alt="Forward Arrow"
-                />
+                <img class="feature-arrow" src="/assets/arrow_forward_ios.svg" alt="Forward Arrow" />
               </li>
-              <li class="feature-item">
+              <li class="feature-item" data-link="/pages/billing-and-receipt.html">
                 <div class="feature-icon">
-                  <img
-                    src="/assets/feature-dropdown-billing.png"
-                    alt="Feature Icon"
-                  />
+                  <img src="/assets/feature-dropdown-billing.png" alt="Feature Icon" />
                 </div>
                 <div class="feature-text">
                   <span class="feature-title">Billing and Receipt</span>
-                  <span class="feature-desc"
-                    >Generate Bills and reciept for customers</span
-                  >
+                  <span class="feature-desc">Generate Bills and receipt for customers</span>
                 </div>
-                <img
-                  class="feature-arrow"
-                  src="/assets/arrow_forward_ios.svg"
-                  alt="Forward Arrow"
-                />
+                <img class="feature-arrow" src="/assets/arrow_forward_ios.svg" alt="Forward Arrow" />
               </li>
-              <li class="feature-item">
+              <li class="feature-item" data-link="/pages/analytical-dashboard.html">
                 <div class="feature-icon">
-                  <img
-                    src="/assets/feature-dropdown-analytical.png"
-                    alt="Feature Icon"
-                  />
+                  <img src="/assets/feature-dropdown-analytical.png" alt="Feature Icon" />
                 </div>
                 <div class="feature-text">
                   <span class="feature-title">Analytical Dashboard</span>
-                  <span class="feature-desc"
-                    >Get Insight and keep a track on ever move</span
-                  >
+                  <span class="feature-desc">Get Insight and keep a track on every move</span>
                 </div>
-                <img
-                  class="feature-arrow"
-                  src="/assets/arrow_forward_ios.svg"
-                  alt="Forward Arrow"
-                />
+                <img class="feature-arrow" src="/assets/arrow_forward_ios.svg" alt="Forward Arrow" />
               </li>
-              <li class="feature-item">
+              <li class="feature-item" data-link="/pages/payroll-management.html">
                 <div class="feature-icon">
-                  <img
-                    src="/assets/feature-dropdown-payroll.png"
-                    alt="Feature Icon"
-                  />
+                  <img src="/assets/feature-dropdown-payroll.png" alt="Feature Icon" />
                 </div>
                 <div class="feature-text">
                   <span class="feature-title">Payroll Management</span>
-                  <span class="feature-desc"
-                    >Manage your employees salary and payouts</span
-                  >
+                  <span class="feature-desc">Manage your employees' salary and payouts</span>
                 </div>
-                <img
-                  class="feature-arrow"
-                  src="/assets/arrow_forward_ios.svg"
-                  alt="Forward Arrow"
-                />
+                <img class="feature-arrow" src="/assets/arrow_forward_ios.svg" alt="Forward Arrow" />
               </li>
-            </ul>
+            </ul>            
           </li>
           <li><a href="/pricing.html">Plans</a></li>
           <li><a href="/about.html">About Us</a></li>
@@ -141,3 +87,15 @@
         <button class="register-btn">Register Now</button>
       </div>
     </nav>
+
+
+    <script>
+      $(document).ready(function() {
+  // Handle click on feature items and navigate to the respective page
+  $(".dropdown-menu .feature-item").on("click", function() {
+    var targetLink = $(this).data("link");  // Get the URL from the data-link attribute
+    window.location.href = targetLink;  // Redirect to the target page
+  });
+});
+
+    </script>
