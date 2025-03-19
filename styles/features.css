@@ -117,3 +117,146 @@ a{
     gap: 10px;
     cursor: pointer;
 }
+
+.container {
+    padding: 84px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.container-2 {
+    padding: 84px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #16a34a;
+    text-align: left;
+    font-weight: 700;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.step-card {
+    background-color: #fafafa;
+    padding: 24px;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step-number {
+    color: #16a34a;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.step-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.step-description {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #16a34a;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #138a3f;
+}
+
+/* Next Level Section */
+.next-level {
+    background-color: #fafafa;
+}
+
+.next-level .main-heading {
+    max-width: 800px;
+}
+
+.next-level .subtitle {
+    color: #16a34a;
+    max-width: 800px;
+}
+
+.cta-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta-button-dark {
+    display: inline-block;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-dark:hover {
+    background-color: #121220;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+    }
+    
+    .step-card {
+        margin-bottom: 20px;
+    }
+    
+    .main-heading {
+        font-size: 30px;
+    }
+    
+    .step-title {
+        font-size: 20px;
+    }
+    
+    .cta-right {
+        justify-content: center;
+    }
+}

@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background-color: #fafafa;
     font-family: 'Satoshi', sans-serif;
 }
 
@@ -19,7 +20,7 @@ body{
 
 .pricing-badge{
     font-size: 14px;
-    color: #004d98;
+    color: #0db031;
     cursor: pointer;
     font-family: 'Satoshi', sans-serif;
 }
@@ -144,16 +145,16 @@ body{
   }
 
   .pc-monthly{
-    background: linear-gradient(180deg, rgba(0, 99, 255, 0.09567577030812324) 0%, rgba(255, 255, 255, 1) 70%);
+    background: linear-gradient(180deg, rgba(0, 77, 152, 0.096) 0%, rgba(255, 255, 255, 1) 70%);
   }
 
   .pc-yearly{
-    background: linear-gradient(180deg, rgba(255,0,0,0.09567577030812324) 0%, rgba(255,255,255,1) 70%);
+    background: linear-gradient(180deg, rgba(13,176,49,0.09567577030812324) 0%, rgba(255,255,255,1) 70%);
   }
 
   .pricing-footer {
-    border: 2px dashed rgb(0, 77, 152, 0.5);
-    color: #004d98;
+    border: 2px dashed rgb(13, 176, 49, 0.5);
+    color: #0db031;
     padding: 8px;
     text-align: center;
     font-size: 14px;
